@@ -167,3 +167,11 @@ form h2 {
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
 }
+
+@media screen and (max-width: 440px) {
+  .app{
+    grid-template-columns: 1fr;
+  }
+  .sidebar{
+    margin-bottom: 10px;
+  }
