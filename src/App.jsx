@@ -55,7 +55,13 @@ const App = () => {
           {isOpened ? "Close" : "Add a friend"}
         </Button>
       </div>
-      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} setSelectedFriends={setSelectedFriends} />}
+      {selectedFriend && (
+        <FormSplitBill
+          key={selectedFriend.id}
+          selectedFriend={selectedFriend}
+          setSelectedFriends={setSelectedFriends}
+        />
+      )}
     </div>
   );
 };
